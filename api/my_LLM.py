@@ -4,7 +4,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from langchain_ollama import OllamaEmbeddings
 
-from langchain_ollama.llms import OllamaLLM
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_core.prompts import ChatPromptTemplate
 
 import os
@@ -27,10 +27,20 @@ def chunk_splitter(docs):
 def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
+def get_key(route="./.key.txt"):
+    with open(".key.txt") as key_file:
+        key = key_file.read().strip()
+    return key
+
 def init_module(chroma_dir = "./chroma_db"):
     os.makedirs(chroma_dir, exist_ok=True)
     
-    embedding_model = OllamaEmbeddings(model="nomic-embed-text")
+    my_api_key = get_key()
+
+    embedding_model = OpenAIEmbeddings(
+        model="text-embedding-3-large",
+        api_key = my_api_key,
+    )
 
     if os.path.exists(chroma_dir) and len(os.listdir(chroma_dir)) > 0:
         vectorstore = Chroma(persist_directory = chroma_dir, embedding_function = embedding_model)
@@ -43,12 +53,13 @@ def init_module(chroma_dir = "./chroma_db"):
             persist_directory = chroma_dir
         )
     
-    model = OllamaLLM(
-        model="deepseek-r1:14b",
-        temperature=0.5,
-        max_tokens=None,
-        timeout=None,
-        max_retries=1,
+    model = ChatOpenAI(
+        model = "gpt-4o",
+        temperature = 0,
+        max_tokens = None,
+        timeout = None,
+        max_retries = 1,
+        api_key = my_api_key
     )
     
     template = """Responde a la peticion cubierto en llaves de manera simple y concisa.
@@ -70,7 +81,10 @@ def get_answer(question,template,vectorstore,model):
     chain = prompt | model
 
     response = chain.invoke({"context": context, "question": question})
-    return response
+
+    print(question+"\n\n"+context+"\n\n")
+
+    return response.content
 
 if __name__ == "__main__":
 
