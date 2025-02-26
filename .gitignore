@@ -3,3 +3,4 @@ api/.username.txt
 chroma_db/
 docs/
 temp.txt
+__pycache__
