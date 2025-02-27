@@ -1,17 +1,17 @@
-Followin Repo is a simple example of a rag based LLM that uses txt files.
+The following repository is a simple example of an RAG-based LLM that uses text files.
 
-**DOOCKER FILE NON-FUNCTIONAL, Work in progress**
+**DOCKER FILE NON-FUNCTIONAL, Work in progress**
 
-the local version requieres ollama to be serving an embeding model and an llm model, in this case nomic and deepseek respectively.
-a yaml file is attached to replicate the enviroment, in my case a conda env.
+The local version requires Ollama to be serving an embedding model and an LLM model, in this case, Nomic and DeepSeek, respectively.
+A YAML file is attached to replicate the environment, in my case, a Conda environment.
 
-the api version requieres a .env file to be in the working directory to acces openai API services for both embeding and LLM services.
+The API version requires a .env file to be in the working directory to access OpenAI API services for both embedding and LLM services:
 
-```OPEN_API_KEY="My open ai api key"```
+```OPENAI_API_KEY="My OpenAI API key"```
 
-the repo has a cli version that uses a predetermined question and a gui version that uses streamlit and receives user input prompts.
+The repository has a CLI version that uses a predetermined question and a GUI version that uses Streamlit and receives user input prompts.
 
-Finally, the algorithms expect there is a ./docs/txt directory to work for rag functionaly, a ./chroma_db directory can be inserted or created if there is none.
+Finally, the algorithms expect there to be a ./docs/txt directory for RAG functionality. A ./chroma_db directory can be inserted or created if there is none.
 
 ![image showing Gui](./imgs/GUI_Example.png)
 
