@@ -4,7 +4,7 @@ chroma_db/
 __pycache__
 api/.env
 api/docs/pdf/*
-api/docs/txt/*
+api/docs/txt/*.txt
 
 !api/
 !api/docs/
