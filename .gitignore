@@ -6,3 +6,4 @@ temp.txt
 __pycache__
 .env
 api/.env
+environment.yml
