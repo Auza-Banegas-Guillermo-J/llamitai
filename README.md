@@ -33,4 +33,4 @@ Once the docker container has been built, we run it using the following command:
 
 **REMEMBER** during the docker run command dont forger to replace "key" and "name" respectively
 
-**CONSIDER** if running the container in windows, the directory for ```./api/docs/txt/``` is the following: \ ```.\api\docs\txt\```
+**CONSIDER** if running the container in windows, replace ```./api/docs/txt/``` for the following ```.\api\docs\txt\```
