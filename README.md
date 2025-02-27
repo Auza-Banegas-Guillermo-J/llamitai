@@ -6,7 +6,7 @@ a yaml file is attached to replicate the enviroment, in my case a conda env.
 the api version requieres a .env file to be in the working directory to acces openai API services for both embeding and LLM services.
 
 ```OPEN_API_KEY="My open ai api key"```
-```
+
 .
 ├── chroma_db
 │   ├── chroma.sqlite3
@@ -23,7 +23,7 @@ the api version requieres a .env file to be in the working directory to acces op
 │   └── txt
 │       └── case_1.txt
 ├── my_LLM.py
-└── streamlit.py```
+└── streamlit.py
 
 ```.  ..  chroma_db  Dockerfile  docs  .env  my_LLM.py  streamlit.py```
 
