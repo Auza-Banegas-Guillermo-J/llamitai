@@ -8,6 +8,7 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_core.prompts import ChatPromptTemplate
 
 import os
+from dotenv import load_dotenv
 
 def load_documents(path="./docs/txt/"):
     loader = DirectoryLoader(path, glob="*.txt")
@@ -28,8 +29,8 @@ def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
 def get_key(route="./.key.txt"):
-    with open(".key.txt") as key_file:
-        key = key_file.read().strip()
+    load_dotenv()
+    key = os.getenv("OPEN_API_KEY")
     return key
 
 def init_module(chroma_dir = "./chroma_db"):
@@ -82,7 +83,7 @@ def get_answer(question,template,vectorstore,model):
 
     response = chain.invoke({"context": context, "question": question})
 
-    print(question+"\n\n"+context+"\n\n")
+    #print(question+"\n\n"+context+"\n\n")
 
     return response.content
 
