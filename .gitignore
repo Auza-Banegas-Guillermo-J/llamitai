@@ -1,9 +1,8 @@
 api/.key.txt
 api/.username.txt
 chroma_db/
-docs/
-temp.txt
 __pycache__
-.env
 api/.env
-api/environment.yml
+api/docs/txt/*
+
+!api/docs/txt
