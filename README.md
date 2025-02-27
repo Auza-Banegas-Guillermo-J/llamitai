@@ -17,7 +17,7 @@ Finally, the algorithms expect there to be a ./docs/txt directory for RAG functi
 
 # Docker Instalation
 
-For the docker instalation the following steps must be done, fist clone the repo:
+For the docker instalation the following steps must be done, first clone the repo:
 
 ```https://github.com/Auza-Banegas-Guillermo-J/llamitai.git```
 
