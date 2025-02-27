@@ -31,6 +31,6 @@ Once the docker container has been built, we run it using the following command:
 
 **NOTE:** if the docs/txt dir is empty an error will be shown
 
-**NOTE:** during the docker run command dont forget to replace _"key"_ and _name_ respectively
+**NOTE:** during the docker run command do not forget to replace _"key"_ and _name_ respectively
 
 **CONSIDER:** if running the container in windows, replace ```./api/docs/txt/``` for the following ```.\api\docs\txt\```
