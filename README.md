@@ -1,4 +1,4 @@
-#GENERAL
+# GENERAL
 
 The following repository is a simple example of an RAG-based LLM that uses text files.
 
@@ -15,7 +15,7 @@ Finally, the algorithms expect there to be a ./docs/txt directory for RAG functi
 
 ![image showing Gui](./imgs/GUI_Example.png)
 
-#Docker Instalation
+# Docker Instalation
 
 For the docker instalation the following steps must be done, fist clone the repo:
 
@@ -31,4 +31,4 @@ Once the docker container has been built, we run it using the following command:
 
 **REMEMBER:** if the docs/txt dir is empty an error will be shown
 
-**REMEMBER** during the docker run command dont forger to replace <key> and <name> respectively
+**REMEMBER** during the docker run command dont forger to replace "key" and "name" respectively
