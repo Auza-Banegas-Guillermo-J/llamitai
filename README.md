@@ -29,8 +29,8 @@ Once the docker container has been built, we run it using the following command:
 
 ```docker run -p 8501:8501 -e OPEN_API_KEY="<key>" -v ./api/docs/txt/:/streamlit_app/api/docs/txt/ <name>```
 
-**REMEMBER:** if the docs/txt dir is empty an error will be shown
+**NOTE:** if the docs/txt dir is empty an error will be shown
 
-**REMEMBER** during the docker run command dont forger to replace "key" and "name" respectively
+**NOTE:** during the docker run command dont forget to replace _"key"_ and _name_ respectively
 
-**CONSIDER** if running the container in windows, replace ```./api/docs/txt/``` for the following ```.\api\docs\txt\```
+**CONSIDER:** if running the container in windows, replace ```./api/docs/txt/``` for the following ```.\api\docs\txt\```
