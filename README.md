@@ -7,28 +7,28 @@ the api version requieres a .env file to be in the working directory to acces op
 
 ```OPEN_API_KEY="My open ai api key"```
 
-.
-├── chroma_db
-│   ├── chroma.sqlite3
-│   └── f7addd67-f77e-40a3-a548-d9827348035a
-│       ├── data_level0.bin
-│       ├── header.bin
-│       ├── length.bin
-│       └── link_lists.bin
-├── Dockerfile
-├── docs
-│   ├── pdfs
-│   │   ├── DIY_Drone_1.pdf
-│   │   └── DIY_Drone_2.pdf
-│   └── txt
-│       └── case_1.txt
-├── my_LLM.py
-└── streamlit.py
-
-```.  ..  chroma_db  Dockerfile  docs  .env  my_LLM.py  streamlit.py```
-
 the repo has a cli version that uses a predetermined question and a gui version that uses streamlit and receives user input prompts.
 
 Finally, the algorithms expect there is a ./docs/txt directory to work for rag functionaly, a ./chroma_db directory can be inserted or created if there is none.
 
 ![image showing Gui](./imgs/GUI_Example.png)
+
+```plaintext
+.
+├── chroma_db
+│   ├── chroma.sqlite3
+│   └── f7addd67-f77e-40a3-a548-d9827348035a
+│       ├── data_level0.bin
+│       ├── header.bin
+│       ├── length.bin
+│       └── link_lists.bin
+├── Dockerfile
+├── docs
+│   ├── pdfs
+│   │   ├── DIY_Drone_1.pdf
+│   │   └── DIY_Drone_2.pdf
+│   └── txt
+│       └── case_1.txt
+├── my_LLM.py
+└── streamlit.py
+```
