@@ -6,5 +6,6 @@ api/.env
 api/docs/pdf/*
 api/docs/txt/*
 
-!api/docs/txt/
+!api/
 !api/docs/
+!api/docs/txt/
