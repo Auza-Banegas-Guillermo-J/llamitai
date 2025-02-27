@@ -5,6 +5,8 @@ __pycache__
 api/.env
 api/docs/pdf/*
 api/docs/txt/*.txt
+local/docs
+local/.ipynb_checkpoints
 
 !api/
 !api/docs/
