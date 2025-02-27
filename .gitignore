@@ -8,4 +8,4 @@ api/docs/txt/*
 
 !api/
 !api/docs/
-!api/docs/txt/
+!api/docs/txt
