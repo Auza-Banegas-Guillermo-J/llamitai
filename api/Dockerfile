@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3
 
-WORKDIR /app2
+WORKDIR /streamlit_app
 
 COPY environment.yml .
 

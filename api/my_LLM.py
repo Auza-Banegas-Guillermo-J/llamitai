@@ -28,7 +28,7 @@ def chunk_splitter(docs):
 def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
-def get_key(route="./.key.txt"):
+def get_key():
     load_dotenv()
     key = os.getenv("OPEN_API_KEY")
     return key
