@@ -8,3 +8,5 @@ the api version requieres a .key.txt file to be in the working directory to acce
 the repo has a cli version that uses a predetermined question and a gui version that uses streamlit and receives user input prompts.
 
 Finally, the algorithms expect there is a ./docs/txt directory to work for rag functionaly, a ./chroma_db directory can be inserted or created if there is none.
+
+![image showing Gui](./imgs/GUI_Example.png)
