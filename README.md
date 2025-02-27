@@ -1,5 +1,7 @@
 Followin Repo is a simple example of a rag based LLM that uses txt files.
 
+**DOOCKER FILE NON-FUNCTIONAL, Work in progress**
+
 the local version requieres ollama to be serving an embeding model and an llm model, in this case nomic and deepseek respectively.
 a yaml file is attached to replicate the enviroment, in my case a conda env.
 
