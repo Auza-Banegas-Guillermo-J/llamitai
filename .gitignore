@@ -3,5 +3,7 @@ api/.username.txt
 chroma_db/
 __pycache__
 api/.env
+api/docs/
 api/docs/txt/*
-api/docs/pdf/
+
+!api/docs/txt/
