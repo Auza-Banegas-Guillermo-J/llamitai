@@ -83,8 +83,6 @@ def get_answer(question,template,vectorstore,model):
 
     response = chain.invoke({"context": context, "question": question})
 
-    #print(question+"\n\n"+context+"\n\n")
-
     return response.content
 
 if __name__ == "__main__":
